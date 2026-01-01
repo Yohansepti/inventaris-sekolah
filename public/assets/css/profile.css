@@ -1,0 +1,142 @@
+/* PROFILE PAGE STYLING */
+.profile-container {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: calc(100vh - 100px);
+    background: #f8f9fc;
+}
+
+.profile-card-wrapper {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 30px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eef0f7;
+}
+
+/* User Info Card */
+.user-info-card {
+    text-align: center;
+}
+
+.profile-avatar-large {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #f0f3ff;
+    padding: 20px;
+    margin-bottom: 20px;
+    object-fit: contain;
+}
+
+.profile-name-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.profile-role-badge {
+    background: #eef2ff;
+    color: #3c5ca5;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Form Styling */
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f3ff;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 12px;
+    border: 2px solid #f0f3ff;
+    background: #f9faff;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #3c5ca5;
+    outline: none;
+    background: white;
+}
+
+.form-group input[readonly] {
+    background: #f0f0f0;
+    cursor: default;
+}
+
+.btn-update {
+    background: #3c5ca5;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-update:hover {
+    background: #2d4a87;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(60, 92, 165, 0.2);
+}
+
+.alert {
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.alert-success {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.alert-danger {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.error-message {
+    color: #dc2626;
+    font-size: 12px;
+    margin-top: 5px;
+}

@@ -1,0 +1,101 @@
+/* =======================================
+   TEMPLATE PRINT — LAPORAN PEMINJAMAN
+   ======================================= */
+
+@media print {
+
+    /* Reset */
+    body {
+        background: white !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    /* Sembunyikan elemen layar */
+    .sidebar,
+    .topbar,
+    .button-group,
+    .tahun-select,
+    .page-title {
+        display: none !important;
+    }
+
+    .main-content {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* =============================
+       HEADER CETAK
+       ============================= */
+    .print-header-peminjaman {
+        display: block !important;
+        text-align: center;
+        margin-bottom: 25px;
+        padding-bottom: 12px;
+        border-bottom: 2px solid black;
+    }
+
+    .print-header-peminjaman img {
+        width: 70px;
+        margin-bottom: 10px;
+    }
+
+    .print-header-peminjaman h2 {
+        margin: 0;
+        font-size: 22px;
+    }
+
+    .print-header-peminjaman h3 {
+        margin: 4px 0 0 0;
+        font-size: 18px;
+    }
+
+    .print-header-peminjaman p {
+        margin-top: 6px;
+        font-size: 14px;
+    }
+
+    /* =============================
+       TABEL CETAK
+       ============================= */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    table th {
+        background: #dfe6f4 !important;
+        border: 1px solid black;
+        padding: 8px;
+        font-weight: bold;
+    }
+
+    table td {
+        border: 1px solid black;
+        padding: 7px;
+    }
+
+    /* =============================
+       FOOTER / TANDA TANGAN
+       ============================= */
+    .print-footer-peminjaman {
+        display: flex !important;
+        justify-content: space-between;
+        margin-top: 40px;
+        padding: 0 20px;
+        font-size: 14px;
+    }
+
+    .print-footer-peminjaman div {
+        text-align: center;
+        width: 40%;
+    }
+
+    .ttd-space {
+        height: 70px;
+    }
+}

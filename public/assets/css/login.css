@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #3C5CA5 50%, #3C5CA5 50%);
+    position: relative;
+}
+
+/* ============================ */
+/*           HEADERS            */
+/* ============================ */
+
+.header-left {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    width: 80px;
+}
+
+.school-title {
+    font-size: 26px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.header-right {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    color: white;
+}
+
+.system-title {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* ============================ */
+/*         LOGIN CARD           */
+/* ============================ */
+
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    background: white;
+    width: 500px;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+}
+
+.login-title {
+    color: #3C5CA5;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    margin: 8px 0 18px 0;
+    border: none;
+    background: #BFC8E1;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: #E7EBF6;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 12px;
+    background: linear-gradient(to right, #1C3879 50%, #223F8A 50%);
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.btn-login:hover {
+    opacity: 0.9;
+}
+
+.error-input {
+    color: rgb(224, 82, 82);
+    font-size: 13px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-align: left;
+    display: none;
+}
+
+.toggle-pass-text {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #233F88;
+}
+
+.toggle-pass-text:hover {
+    opacity: 0.8;
+}
+
